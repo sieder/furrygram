@@ -89,7 +89,7 @@ class SharePhotoController: UIViewController {
         ref.updateChildValues(values) { (err, ref) in
             if let err = err {
                 self.navigationItem.rightBarButtonItem?.isEnabled = true
-                print("Failed to save post to DB: ", err)
+                print("Failed to save post to DB: ", err) //test
             }
             print("Successfully save info to DB")
             self.dismiss(animated: true, completion: nil)
